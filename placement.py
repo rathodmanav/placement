@@ -14,12 +14,6 @@ placement_model = pickle.load(open("placement_data.sav", 'rb'))
 # Streamlit app title
 st.title("Student Placement Prediction App")
 
-st.markdown(
-    """
-    ### Predict whether a student will be placed or not based on their academic and personal details.
-    """
-)
-
 # Input fields
 gender = st.selectbox("Gender:", ["Male", "Female"])
 ssc_p = st.slider("SSC Percentage (10th Grade):", min_value=0.0, max_value=100.0, value=75.0)
